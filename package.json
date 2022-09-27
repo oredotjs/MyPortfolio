@@ -4,10 +4,10 @@
   "description": "My porfolio website",
   "main": "index.js",
   "scripts": {
-    "start": "npm server.js",
-    "prod": "",
-    "dev": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "NODE_ENV=development nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "debug": "ndb server.js"
   },
   "author": "",
   "license": "ISC",
